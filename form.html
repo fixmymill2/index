@@ -1,0 +1,269 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    input[type="text"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    textarea {
+        height: 100px;
+    }
+    input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 12px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+    .form-group{
+        display: flex;
+        align-items: center;
+        margin: 40px;
+    }
+    
+    .form-group-1{
+        margin-left: 50px;
+    }
+    .form-group-1{
+    }
+    .g7 .new
+    {
+       margin: 10px;;
+    }
+    .one 
+    {
+        margin-left: 50px;
+    }
+    .bala , .a  
+    {
+        display:block;
+    
+    }
+    .address{
+        margin-left:20px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <center> <h2> Book your slot</h2></center> 
+    <form action="#" method="post">
+        
+        <!-- <div class="form-group">
+            <label for="states" >State:</label>
+           
+            <select id="states" name="states">
+                <option value="guntur"  >
+                    select
+                </option>
+                <option value="andhra-pradesh">Andhra Pradesh</option>
+                <option value="arunachal-pradesh">Arunachal Pradesh</option>
+                <option value="assam">Assam</option>
+                <option value="bihar">Bihar</option>
+                <option value="chhattisgarh">Chhattisgarh</option>
+                <option value="goa">Goa</option>
+                <option value="gujarat">Gujarat</option>
+                <option value="haryana">Haryana</option>
+                <option value="himachal-pradesh">Himachal Pradesh</option>
+                <option value="jammu-kashmir">Jammu and Kashmir</option>
+                <option value="jharkhand">Jharkhand</option>
+                <option value="karnataka">Karnataka</option>
+                <option value="kerala">Kerala</option>
+                <option value="madhya-pradesh">Madhya Pradesh</option>
+                <option value="maharashtra">Maharashtra</option>
+                <option value="manipur">Manipur</option>
+                <option value="meghalaya">Meghalaya</option>
+                <option value="mizoram">Mizoram</option>
+                <option value="nagaland">Nagaland</option>
+                <option value="odisha">Odisha</option>
+                <option value="punjab">Punjab</option>
+                <option value="rajasthan">Rajasthan</option>
+                <option value="sikkim">Sikkim</option>
+                <option value="tamil-nadu">Tamil Nadu</option>
+                <option value="telangana">Telangana</option>
+                <option value="tripura">Tripura</option>
+                <option value="uttar-pradesh">Uttar Pradesh</option>
+                <option value="uttarakhand">Uttarakhand</option>
+                <option value="west-bengal">West Bengal</option>
+            </select>
+            </div> -->
+
+        <!-- <div class="form-group">
+            <Label>District:</Label>
+            <select id="districts" name="districts">
+                <option value="guntur"  >
+                    select
+                </option>
+                <option value="visakhapatnam">Visakhapatnam</option>
+                <option value="krishna">Krishna</option>
+                <option value="guntur">Guntur</option>
+                <option value="nellore">Nellore</option>
+                <option value="kadapa">Kadapa</option>
+                <option value="east-godavari">East Godavari</option>
+                <option value="west-godavari">West Godavari</option>
+                <option value="chittoor">Chittoor</option>
+                <option value="anantapur">Anantapur</option>
+                <option value="kurnool">Kurnool</option>
+            </select>
+            
+        </div> -->
+        <div class="form-group"> 
+     
+            <label for="feedback-type">city:</label>
+            <select id="cities" name="cities">
+                <option value="guntur"  >
+                    select
+                </option>
+
+                <option value="visakhapatnam" >Visakhapatnam</option>
+                <option value="vijayawada">Vijayawada</option>
+                <option value="guntur">Guntur</option>
+                <option value="nellore">Nellore</option>
+                <option value="kurnool">Kurnool</option>
+                <option value="rajahmundry">Rajahmundry</option>
+                <option value="tirupati">Tirupati</option>
+                <option value="kakinada">Kakinada</option>
+                <option value="anantapur">Anantapur</option>
+                <option value="eluru">Eluru</option>
+            </select>
+     </div> 
+     <div class="form-group">
+        <label for="email">Zipcode:</label>
+        <input type="text" id="phone" name="phone" required autocomplete="off">&nbsp;&nbsp; 
+        <!-- <label for="email">landmark:</label>
+        <input type="text" id="phone" name="phone" required autocomplete="off"> -->
+    </div>
+     <div class="form-group">
+        <label for="email">Brand:</label>
+        <input type="text" id="phone" name="phone" required autocomplete="off">
+    </div>
+     <div class="form-group">
+        <label for="email">Model:</label>
+        <input type="text" id="phone" name="phone" required autocomplete="off">
+    </div>
+ 
+      
+        <div class="form-group">
+            <label  >Name:</label><input type="text" id="name" name="name" required autocomplete="off">&nbsp;&nbsp;
+           </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Phone:</label>
+            <input type="text" id="phone" name="phone" required>
+        </div>
+        <div class="form-group bala">
+            <form action="">
+            <div class="a">
+
+            <input type="radio" >
+              Basic Service 
+            </div>
+           <div class="a">
+            <input type="radio" >
+           Standard Service 
+ 
+        </div>
+            <div class="a">
+            <input type="radio" >   
+           Advanced Service </div>
+       
+        </form>
+        </div>
+        <div class="form-group">
+            <label for="email">date for appointment:&nbsp;&nbsp; </label>
+            <input type="date" id="email" name="email" required>
+
+        </div>
+        <div class="form-group">
+            <label for="email">Slot-Booking:&nbsp;&nbsp; </label>
+            <select id="cities" name="cities">
+                <option value="guntur"  >
+                    select
+                </option>
+
+                <option value="Morning" >Morning-session</option>
+                <option value="Afternoon" >
+                    Afternoon-session
+                </option>
+                
+
+           </select>
+        </div>
+ <div class="address">
+    <div class="textarea">
+       <b> Address:</b>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </div>
+ </div>
+ <div class="address">
+    <div class="textarea">
+       <b>  Comments:</b>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </div>
+ </div>
+  
+     
+        
+        <div class="radio"></div>
+        <br>
+       
+        <!-- <div class="one" > -->
+            <!-- <label>
+               upload  bike image  for better service <br/><br/>
+            </label>
+            <input type="file" autocomplete="off">
+        </div> -->
+  order summmary----------------------------------------------
+        <div class="form-group g7">
+            <input  class = "new" type="submit" value="Paynow">
+            <input type="submit" value="Cash on delivery">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
+
+
+ 
